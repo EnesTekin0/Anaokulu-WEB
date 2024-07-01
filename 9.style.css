@@ -1,0 +1,80 @@
+.main-com {
+  padding-top: 80px;
+  margin: 0 5%;
+}
+
+.com h1 {
+  padding-top: 140px;
+  color: palevioletred;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container a:hover .address,
+.container a:hover .phone,
+.container a:hover .e-mail,
+.container a:hover .instagram {
+  background: rgb(220, 220, 220);
+}
+
+
+.main-com .phone,
+.main-com .e-mail,
+.main-com .instagram {
+  width: 300px;
+  height: 150px;
+  margin: 20px 0;
+  padding: 40px;
+  background: #f1f1f1;
+  font-size: 20px;
+}
+
+.main-com .address {
+  width: 300px;
+  height: 150px;
+  margin: 0 0 20px 0;
+  padding: 40px;
+  background: #f1f1f1;
+  font-size: 20px;
+}
+
+.main-com .phone,
+.main-com .e-mail,
+.main-com .instagram {
+  height: 60px;
+}
+
+.container h4 {
+  margin-bottom: 10px;
+}
+
+.container h4 i {
+  padding-left: 10px;
+  color: rgb(152, 43, 145);
+}
+
+.container h4 i:hover {
+  color: blueviolet;
+}
+
+iframe {
+  width: 70%;
+  border: 0;
+  padding-left: 15px;
+  margin-bottom: 58px;
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 100%;
+    margin-left: -10px;
+  }
+}

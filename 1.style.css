@@ -1,0 +1,125 @@
+.slideshow-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.slideshow-container {
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  border: 5px solid rgb(152, 43, 145);
+  border-radius: 5px;
+  margin: 30px 2% 30px 5%;
+  box-sizing: border-box;
+}
+
+.photos {
+  position: relative;
+  width: 1600%;
+  left: 0;
+  animation: 30s slayt infinite;
+}
+
+.photos img {
+  width: 6.3%;
+  float: left;
+}
+
+@keyframes slayt {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  15% {
+    left: -101%;
+  }
+  25% {
+    left: -101%;
+  }
+  30% {
+    left: -202%;
+  }
+  40% {
+    left: -202%;
+  }
+  45% {
+    left: -303%;
+  }
+  55% {
+    left: -303%;
+  }
+  60% {
+    left: -404%;
+  }
+  70% {
+    left: -404%;
+  }
+  75% {
+    left: -504%;
+  }
+  85% {
+    left: -504%;
+  }
+}
+
+.content {
+  color: rgb(152, 43, 145);
+  width: 40%;
+  margin: 30px 10px 0 0;
+}
+
+.content h1 {
+  color: palevioletred;
+}
+
+.slogan {
+  width: 90%;
+  text-align: center;
+  font-size: 28px;
+  color: green;
+  border: 2px solid rgb(152, 43, 145);
+  border-radius: 15px;
+  margin: 20px 0;
+  margin-left: 5%;
+  padding: 10px;
+  font-family: "Dancing Script", cursive;
+}
+
+/* RESPONSIVE DESIGNE */
+
+@media screen and (max-width: 768px) {
+  .slideshow-container {
+    width: 100%;
+    margin-left: 5%;
+  }
+  .content {
+    width: 100%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .slideshow-container {
+    width: 100%;
+    margin-left: 5%;
+    border: 0px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .slideshow-container {
+    width: 100%;
+    margin-left: 5%;
+    border: 0px;
+  }
+  .content {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: -100px;
+  }
+  .slogan {
+    width: 88%;
+  }
+}

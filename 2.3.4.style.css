@@ -1,0 +1,30 @@
+.main {
+  padding-top: 100px;
+  margin: 0 5%;
+}
+
+.main h1 {
+  padding: 20px 0;
+  color: palevioletred;
+}
+
+.main p {
+  padding: 20px 0;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.slogan {
+  font-size: 28px !important;
+  color: green;
+  border: 2px solid rgb(152, 43, 145);
+  border-radius: 15px;
+  padding: 15px !important;
+  font-family: "Dancing Script", cursive;
+}
+
+@media screen and (max-width: 768px) {
+footer{
+  margin-top: 500px;
+}
+}

@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main  {
+  height: 360px;
+}
+/* NAVIGATION BAR */
+.navbar {
+  position: fixed;
+  background-color: rgb(152, 43, 145);
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.logo img {
+  margin-top: 4px;
+  width: 250px;
+  height: 79px;
+  border: 0.5px solid rgb(152, 43, 145);
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 5%;
+}
+
+.nav-links li {
+  line-height: 28px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-menu {
+  display: block;
+  padding: 26px 20px;
+}
+
+.nav-links a:hover {
+  color: rgb(152, 43, 145);
+  background-color: white;
+  border: 0.5px solid rgb(152, 43, 145);
+  border-radius: 5px;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(152, 43, 145);
+  width: 200px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+#mobil-i #menu-bar {
+  display: none;
+}
+
+#mobil-i label {
+  color: white;
+  font-size: 22px;
+  padding: 29px 0;
+  cursor: pointer;
+  display: none;
+}
+
+#mobil-i label:hover {
+  color: orange;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background: rgb(152, 43, 145);
+  padding: 0 2%;
+  margin-top: 10%;
+}
+
+footer .container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 65%;
+  padding-top: 10px;
+}
+
+footer .address {
+  justify-content: space-between;
+  width: 25%;
+  padding: 50px 0;
+  margin-left: -10%;
+  color: white;
+}
+
+footer .container-2 {
+  width: 15%;
+  padding: 50px 6%;
+}
+
+footer .phone,
+footer .e-mail,
+footer .instagram {
+  
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+}
+
+footer i {
+  margin: 0 10px;
+}
+
+footer i:hover {
+  color: orange;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* RESPONSIVE DESIGNE */
+
+@media screen and (max-width: 768px) {
+  /* MOBIL MENU */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(152, 43, 145);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+  .nav-links a {
+    width: 100%;
+    border: 0;
+  }
+  #mobil-i {
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    right: 50px;
+  }
+  #mobil-i label {
+    display: initial;
+  }
+  .nav-links .dropdown .dropdown-menu {
+    position: relative;
+    width: 100%;
+  }
+  .nav-links .dropdown .dropdown-menu li {
+    background: rgb(152, 43, 145);
+  }
+  /* MOBIL FOOTER */
+  footer img {
+    width: 100%;
+    margin-left: -2%;
+  }
+  footer .address {
+    width: 100%;
+    margin-left: 6%;
+  }
+  footer .container-2 {
+    width: 100%;
+  }
+}
